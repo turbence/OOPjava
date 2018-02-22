@@ -14,6 +14,14 @@ public class Wallis {
 		System.out.println(pi*4);
 		System.out.println(factor(6));
 		System.out.println(factor2(6));
+		System.out.println(isPrime(15));
+		for (int i = 1; i <= 100; i++) {
+			for (int j = 0; j <= 100; j++) {
+				if (isPrime(i) && isPrime(j) && i + 2 == j) {
+					
+				}
+			}
+		}
 	}
 	private static int factor(int n) {
 		int factor=1;
@@ -29,5 +37,14 @@ public class Wallis {
 		else {
 			return n * factor2(n-1);
 		}
+	}
+	
+	private static boolean isPrime(int n) {
+		for (int i = 2; i < n; i++) {
+			if (n%i==0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
