@@ -1,6 +1,7 @@
 package employee;
 
 public class Employee {
+	static int pensionAgeLimit = 65;
 	private String name;
 	private Integer salary;
 	private Integer age;
@@ -30,7 +31,7 @@ public class Employee {
 		return name + ", "+ age + " éves" + salary + "ft" + yearsLeftToPension() + "én van nyugdijig";
 	}
 	
-	public void setPensionageLimit(int limit) {
+	public static void setPensionageLimit(int limit) {
 		pensionAgeLimit = limit;
 	}
 	
