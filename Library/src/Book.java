@@ -7,6 +7,8 @@ public class Book {
 	private int releaseYear;
 	private double price;
 	
+	
+	
 	public String getTitle() {
 		return title;
 	}
@@ -33,10 +35,10 @@ public class Book {
 	}
 	
 	public void raisePrice(int percentage) {
-		price*=(1+percentage/100.0);
+		price*=(1 + percentage / 100.0);
 	}
 	
 	public String toString() {
-		return "title: "+title+" , "+author+", "+releaseYear+", "+price;
+		return "title: " + title + " , " + author + ", " + releaseYear + ", " + price;
 	}
 }
